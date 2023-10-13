@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
- 
+    
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/3ff4519403.js" crossorigin="anonymous"></script>
+    
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
@@ -15,29 +21,82 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg position-fixed w-100  z-3" style="background: #48474749;">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center w-100" style="gap: 30px;">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white fw-initial" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white fw-initial" aria-current="page" href="src/views/about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white fw-initial" aria-current="page" href="src/views/services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white fw-initial" aria-current="page" href="src/views/News.html">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white fw-initial" aria-current="page" href="src/views/contact.html">Contact</a>
-                    </li>
-                </ul>
+    <nav>
+        <div class="navigation">
+            <a href="index.html">
+                <div class="logo">
+                    <div class="container-img"></div>
+                </div>
+            </a>
+
+                <div class="toggle">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="whatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="contact">
+                    <span>contactanos</span>
+                </div>
+            </div>
+        </div>
+        <div class="mini-menu">
+            <div class="row w-100" style="height: 70%;">
+                <div class="col-lg-8 d-flex justify-content-start align-items-center">
+                    <ul class="list-items-links">
+                        <li class="item">
+                            <span class="number">01</span>
+                            <a href="src/views/about.html">
+                                About
+                            </a>
+                        </li>
+                        <li class="item">
+                            <span class="number">02</span>
+                            <a href="">
+                                Servicios
+                            </a>
+                        </li>
+                        <li class="item">
+                            <span class="number">03</span>
+                            <a href="">
+                                Agenda
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-start align-items-center flex-row">
+                    <ul class="list-items-information">
+                        <li class="item">
+                            <h6 class="fw-normal">
+                                Escribenos
+                            </h6>
+                            <p class="paragraph fw-normal fs-6 ms-2">ejemplo@gmail.com</p>
+                        </li>
+                        <li class="item">
+                            <h6 class="fw-normal">
+                                Escribenos
+                            </h6>
+                            <p class="paragraph fw-normal fs-6 ms-2">321564978</p>
+                            <p class="paragraph fw-normal fs-6 ms-2">321564978</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row w-100" style="height: 30%;">
+                <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                    <span>Clientes</span>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                    <span>Blog</span>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                    <span>Siguenos</span>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
             </div>
         </div>
     </nav>
@@ -49,102 +108,227 @@
                         <img src="src/assets//Home/img-portada.png" alt="" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-sm-7 col-md-6 col-lg-6 d-flex justify-content-center align-items-start flex-column align-items-md-center" style="gap: 15px;">
+                <div class="col-sm-7 col-md-6 col-lg-6 d-flex justify-content-center align-items-start flex-column" style="gap: 15px;">
                     <div class="tittle">
-                        <h1 class="p-0 m-0">JOIN TODAY</h1>
-                        <h1 class="p-0 m-0 text-white">GET 50% OFF</h1>
+                        <h1 class="p-0 m-0">Activa Tu Mejor <span> Versión</span></h1>
                     </div>
                     <div class="paragraph">
-                        <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia assumenda doloribus suscipit provident quam odio corporis commodi et. Eligendi consectetur distinctio illo velit asperiores laudantium eaque obcaecati ducimus aperiam doloribus!</p>
-                        <button>Learn More</button>
+                        <p class="text-white">En nuestro gimnasio, creemos que el camino hacia la grandeza comienza con un solo paso. ¡Da ese paso hoy y comienza tu viaje para convertirte en la mejor versión de ti mismo! Juntos, alcanzaremos tus metas de acondicionamiento físico y te apoyaremos en cada paso del camino.</p>
+                        <button><span>Inscribite Ahora</span><i></i></button>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="sport" class="sport">
-            <div class="row h-100">
-                <div class="col-lg-12">
-                    <div class="container d-flex justify-content-center align-items-start flex-column h-100">
-                        <div class="tittle">
-                            <h2>SPORT</h2>
-                            <h3 class="text-white fs-1">START TRANING TODAY</h3>
+        <section id="problematic" class="problematic">
+            <div class="container">
+                <div class="introduction text-center">
+                    <h2 class="fw-bold">¿Tienes problemas de sobrepeso?</h2>
+                    <p class="paragraph">El sobrepeso, un desafío común en la sociedad actual, se caracteriza por un exceso de peso corporal en relación con la estatura, con un impacto significativo en la salud y el bienestar. En nuestro gimnasio, comprendemos la importancia de abordar este problema de manera integral. Ofrecemos un ambiente acogedor y profesional donde te guiaremos hacia tus metas de acondicionamiento físico y te ayudaremos a combatir el sobrepeso de manera efectiva. Nuestro equipo de entrenadores altamente calificados diseñará un programa de ejercicios personalizado adaptado a tus necesidades y objetivos de pérdida de peso específicos.</p>
+                </div>
+                <div class="additional-date mt-5">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="date d-flex flex-column justify-content-center align-items-center">
+                                <p>+50 kilos</p>
+                                <p>perdidos en 3 meses</p>
+                            </div>
                         </div>
-                        <div class="paragraph w-50">
-                            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sequi id accusamus delectus voluptatem velit. Harum officia, rem animi esse dolorum, nam dignissimos repudiandae facere asperiores ipsam eveniet aut cumque lorem.</p>
+                        <div class="col-lg-4">
+                            <div class="date d-flex flex-column justify-content-center align-items-center">
+                                <p>- 20 USD</p>
+                                <p>Podras entrenar con nosotros</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="date d-flex flex-column justify-content-center align-items-center">
+                                <p>+ 200 Ejercicios</p>
+                                <p>Que podras hacer con nosotros</p>
+                            </div>
                         </div>
                     </div>
-                </div> 
+                    <div class="row mt-5">
+                        <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                            <button>Inscribite ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="tittle container p-5  mb-5">
+                    <h2 class="fw-bold">Nuestros Servicios</h2>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="container-img">
+                                    <img src="src/assets/Home/servicios/carousel/img-1.jpg" alt="" class="img-fluid">   
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vero repellat consequatur facilis perspiciatis ea.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="container-img">
+                                    <img src="src/assets/Home/servicios/carousel/img-2.jpg" alt="" class="img-fluid">   
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vero repellat consequatur facilis perspiciatis ea.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="container-img">
+                                    <img src="src/assets/Home/servicios/carousel/img-3.jpg" alt="" class="img-fluid">   
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vero repellat consequatur facilis perspiciatis ea.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="container-img">
+                                    <img src="src/assets/Home/servicios/carousel/img-4.jpg" alt="" class="img-fluid">   
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vero repellat consequatur facilis perspiciatis ea.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="container-img">
+                                    <img src="src/assets/Home/servicios/carousel/img-5.jpg" alt="" class="img-fluid">   
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vero repellat consequatur facilis perspiciatis ea.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="container-img">
+                                    <img src="src/assets/Home/servicios/carousel/img-6.jpg" alt="" class="img-fluid">   
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vero repellat consequatur facilis perspiciatis ea.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="container-img">
+                                    <img src="src/assets/Home/servicios/carousel/img-7.jpg" alt="" class="img-fluid">   
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vero repellat consequatur facilis perspiciatis ea.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="container-img">
+                                    <img src="src/assets/Home/servicios/carousel/img-8.jpg" alt="" class="img-fluid">   
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vero repellat consequatur facilis perspiciatis ea.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="container-img">
+                                    <img src="src/assets/Home/servicios/carousel/img-9.jpg" alt="" class="img-fluid">   
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vero repellat consequatur facilis perspiciatis ea.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
             </div>
         </section>
-        <section id="group-card" class="group-card">
-            <div class="container h-100 d-flex justify-content-center align-items-start flex-column" style="gap: 30px;">
-                <div class="titlte">
-                    <h2 class="fs-1 text-white text-decoration-underline" style="text-underline-offset: 1rem;">Lorem ipsum dolor sit.</h2>
+        <section class="testimony" id="testimony">
+            <div class="container h-100">
+                <div class="row" style="height: 50%;">
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                        <div class="container-img" style="width: 80%;">
+                            <img src="src/assets/Home/testimony/img-1.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                        <div class="description">
+                            <p>Nuestro gimnasio te ofrece una experiencia completa de bienestar. Disfruta de una relajante sauna después de tu entrenamiento, la música ambiental te motivará en cada sesión. Nuestras modernas máquinas y equipos te ayudarán a alcanzar tus objetivos. ¡Bienestar, música y excelentes instalaciones, todo en un solo lugar!</p>
+                            <button>Ver mas</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="container-cards">
-                    <div class="card">
-                        <div class="container-img">
-                            <img src="src/assets/Home/cards/img-1.jpg" alt="" class="img-fluid">
-                            <div class="description-card">
-                                <h4 class="fw-bold fs-5 text-capitalize">Lorem4</h4>
-                                <span class="paragraph">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere ratione sequi fugit mollitia similique!
-                                </span>
+                <div class="row" style="height: 50%;">
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <div class="information-testimony">
+                            <div class="container-img">
+                                <img src="https://img.freepik.com/foto-gratis/impresionante-culturista-sombras-profundas-posando-estudio-aislado-gris_613910-16922.jpg?w=740&t=st=1696919452~exp=1696920052~hmac=7fdbcfe1109d5afa6cdfd4891447c5fd24da550fb48fd6c1fd7f63315c0dc1ef" alt="" class="img-fluid">
+                            </div>
+                            <span class="name">
+                                David Pérez
+                            </span>
+                            <div class="calification">
+                                <i class="text-warning fa-solid fa-star"></i>
+                                <i class="text-warning fa-solid fa-star"></i>
+                                <i class="text-warning fa-solid fa-star"></i>
+                                <i class="text-warning fa-solid fa-star"></i>
+                                <i class="text-warning fa-solid fa-star"></i>
+                            </div>
+                            <div class="description-testimony">
+                                <p>Excelente gimnasio. Las instalaciones son modernas, el personal es amable y siempre dispuesto a ayudar. Las clases son variadas y divertidas. ¡Mi lugar favorito para mantenerme en forma.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="container-img">
-                            <img src="src/assets/Home/cards/img-2.jpg" alt="" class="img-fluid">
-                            <div class="description-card">
-                                <h4 class="fw-bold fs-5 text-capitalize">Lorem4</h4>
-                                <span class="paragraph">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere ratione sequi fugit mollitia similique!
-                                </span>
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <div class="information-testimony">
+                            <div class="container-img">
+                                <img src="https://img.freepik.com/foto-gratis/hombre-musculoso-rodillas-sosteniendo-pesas_613910-921.jpg?w=740&t=st=1696919544~exp=1696920144~hmac=103cc38752d6c15466fa98373d044c470a621428c909eaec44823c4fbd6b4d65" alt="" class="img-fluid">
+                            </div>
+                            <span class="name">
+                                Carlos Rodríguez
+                            </span>
+                            <div class="calification">
+                                <i class="text-warning fa-solid fa-star"></i>
+                                <i class="text-warning fa-solid fa-star"></i>
+                                <i class="text-warning fa-solid fa-star"></i>
+                                <i class="text-warning fa-solid fa-star"></i>
+                                <i class="text-warning fa-regular fa-star"></i>
+                            </div>
+                            <div class="description-testimony">
+                                <p>Un gimnasio sólido. Ofrecen una amplia gama de equipos y horarios convenientes. Podrían mejorar la limpieza en horas pico, pero en general, una gran elección para los amantes del fitness</p>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="container-img">
-                            <img src="src/assets/Home/cards/img-3.jpg" alt="" class="img-fluid">
-                            <div class="description-card">
-                                <h4 class="fw-bold fs-5 text-capitalize">Lorem4</h4>
-                                <span class="paragraph">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere ratione sequi fugit mollitia similique!
-                                </span>
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <div class="information-testimony">
+                            <div class="container-img">
+                                <img src="https://img.freepik.com/foto-gratis/hombre-musculoso-camisa-barba-posando-sobre-fondo-gris_613910-16985.jpg?w=740&t=st=1696919709~exp=1696920309~hmac=c69da16e1cb991564fa0258b1519ae9510319cb37cb91f91aedb7bd627578b69" alt="" class="img-fluid">
                             </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="container-img">
-                            <img src="src/assets/Home/cards/img-4.jpg" alt="" class="img-fluid">
-                            <div class="description-card">
-                                <h4 class="fw-bold fs-5 text-capitalize">Lorem4</h4>
-                                <span class="paragraph">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere ratione sequi fugit mollitia similique!
-                                </span>
+                            <span class="name">
+                                Juan Sánchez
+                            </span>
+                            <div class="calification">
+                                <i class="text-warning fa-solid fa-star"></i>
+                                <i class="text-warning fa-solid fa-star"></i>
+                                <i class="text-warning fa-solid fa-star"></i>
+                                <i class="text-warning fa-solid fa-star"></i>
+                                <i class="text-warning fa-regular fa-star"></i>
                             </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="container-img">
-                            <img src="src/assets/Home/cards/img-5.jpg" alt="" class="img-fluid">
-                            <div class="description-card">
-                                <h4 class="fw-bold fs-5 text-capitalize">Lorem4</h4>
-                                <span class="paragraph">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere ratione sequi fugit mollitia similique!
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="container-img">
-                            <img src="src/assets/Home/cards/img-6.jpg" alt="" class="img-fluid">
-                            <div class="description-card">
-                                <h4 class="fw-bold fs-5 text-capitalize">Lorem4</h4>
-                                <span class="paragraph">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere ratione sequi fugit mollitia similique!
-                                </span>
+                            <div class="description-testimony">
+                                <p>Me encanta este gimnasio! Los instructores son increíbles, y las clases son desafiantes. Las únicas mejoras que sugeriría son tener más máquinas de cardio y un área de estiramiento más espaciosa</p>
                             </div>
                         </div>
                     </div>
@@ -152,31 +336,97 @@
             </div>
         </section>
     </main>
-    <footer id="footer" class="bg-dark w-100">
+    <footer id="footer" class="w-100">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <h2>¿Y si nos reunimos?</h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="container-card">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="container-img">
+                                        <img src="src/assets/footer/img-1.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 ps-5">
+                                    <div class="container-description">
+                                        <p class="paragraph fw-bold fs-5">Soy una pyme y tengo una gran idea</p>
+                                        <a href="">Escibenos +</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="container-card">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="container-img">
+                                        <img src="src/assets/footer/img-2.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 ps-5">
+                                    <div class="container-description">
+                                        <p class="paragraph fw-bold fs-5">Soy una pyme y tengo una gran idea</p>
+                                        <a href="">Escibenos +</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column">
+                <div class="col-lg-3">
                     <div class="container-img">
                         <img src="src/assets/Logo/logo.png" alt="" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column">
-                    <h4 class="text-white fw-bold text-center">Contactanos</h2>
-                    <ul class="list-items text-center">
-                        <li class="item text-white">+57 32156478</li>
-                        <li class="item text-white">+57 32156478</li>
-                    </ul>
+                <div class="col-lg-3 d-flex justify-content-center align-items-start flex-column">
+                    <p class="fs-6 fw-bold">Visitanos</p>
+                    <p class="fs-6">Lima peru</p>
                 </div>
-                <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column">
-                    <span class="text-white text-center">
-                        Si tienes alguna duda escribenos a ejemplo@gmail.com
-                    </span>
+                <div class="col-lg-3 d-flex justify-content-center align-items-start flex-column">
+                    <p class="fs-6 fw-bold">Hablemos</p>
+                    <p class="fs-6">32183847211</p>
+                    <p class="fs-6">32183847211</p>
+                </div>
+                <div class="col-lg-3 d-flex justify-content-center align-items-start flex-column">
+                    <p class="fs-6 fw-bold">Escribenos</p>
+                    <p class="fs-6">ejempl@gmail.com</p>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-lg-4 d-flex justify-content-center align-items-center" style="gap: 20px;">
+                    <h4 class="fs-6">Siguenos en nuestreas redes</h4>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                    <p>Paginas enconec</p>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                    <span class="fs-6 paragraph text-white">Esta pagina es una pagina unica y hecha por las redes de esta apgina asi que no se pude copoar y pegar en otro aldo</span>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <!-- swiper -->
+    <script src="src/scripts/swiper/swiper.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="src/scripts/config.js"></script>
 </body>
 </html>

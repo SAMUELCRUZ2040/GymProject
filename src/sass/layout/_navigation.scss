@@ -1,0 +1,133 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+nav {
+  // Estilos generales de navegación
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100vh;
+    background-color: $primary-color;
+    overflow: hidden;
+    @include flex($direction: column);
+
+    // Estilos del logo
+    .logo {
+      position: absolute;
+      top: 10%;
+      left: -100%;
+      width:  11vw;
+      height: 70px;
+      @include transform($method : rotate(-90deg));
+      @include background($url : "../assets/Logo/logo.png");
+    }
+
+    // Estilos del botón toggle
+    .toggle {
+      width: 100%;
+      height: auto;
+      padding: 0.8rem 0;
+      cursor: pointer;
+      @include flex($direction: column, $gap: 7px);
+
+      // Estilos de las líneas del botón
+      .line {
+        width: 40%;
+        height: 1px;
+        background: $secondary-color;
+      }
+    }
+
+    // Estilos de WhatsApp
+    .whatsApp {
+      width: 80%;
+      height: 6vh;
+      background: #01E027;
+      position: absolute;
+      bottom: 15%;
+      border-radius: 100%;
+      cursor: pointer;
+      @include flex();
+        
+      i{
+        font-size: 30px;
+        color: $letter-color;
+      }
+    }
+
+    // Estilos de contacto
+    .contact {
+      background: $secondary-color;
+      width: 100%;
+      height: 14%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+      cursor: pointer;
+      @include flex();
+
+        span{
+            font-size: 12px;
+            letter-spacing: 1px;
+            @include transform($method : rotate(-90deg));
+        }
+        &:hover{
+            background: #f1416d;
+        }
+    }
+  }
+
+  // Estilos del mini-menú
+  .mini-menu {
+    width: calc(100% - 70px);
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -o-transform-origin: left;
+    transform-origin: left;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: .2s;
+    z-index: 9999;
+    background: url(../assets/Home/nav/bg-over.png) repeat $primary-color;
+    @include flex($direction: column);
+    @include transform($method : scaleX(0));
+
+    // Estilos de los ítems del mini-menú
+    .list-items-links .item {
+      font-size: 60px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateX(20px);
+      }
+      // Estilos del número
+      .number {
+        font-size: 30px;
+        opacity: 0;
+      }
+      &:hover .number{
+        opacity: 1;
+      }
+    }
+  }
+
+  // Estilos cuando la clase .menu-active está presente en nav
+  &.menu-active .mini-menu {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}

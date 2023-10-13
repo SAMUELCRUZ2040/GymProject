@@ -1,0 +1,140 @@
+// Portada
+@import "../utils/variables";
+
+#portada {
+    background-image: linear-gradient(#000000d6,#000000da,#000000f7,), url(../assets/Home/portada/fondo-portada.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .tittle h1 {
+      font-size: 6vw;
+      font-weight: 600;
+  
+      span {
+        color: $secondary-color !important;
+      }
+    }
+}
+// problematic
+#problematic .swiper {
+    overflow: visible;
+  
+      .swiper-wrapper{
+        gap: 40px;
+  
+        .swiper-slide .card{
+          background: transparent;
+          height: 100% !important;
+          text-align: start;
+          position: relative;
+          
+          .container-img{
+            width: 100%;
+            max-height: 22vh;
+            overflow: hidden;
+            background: #ffffff;
+            @include flex( $align : start);
+          }
+  
+          &:hover{
+              @include transform($method : scale(1.05));
+          }
+        }
+    }
+  
+  }
+
+
+// testimony 
+#testimony {
+  .row:first-child{
+    .container-img{
+      position: relative;
+      @include flex();
+      padding: 2vh;
+  
+      &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border: 1px solid $secondary-color;
+        padding: 1vw;
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .row:last-child{
+    .information-testimony{
+      text-align: center;
+      @include flex($direction: column, $gap: 20px);
+
+      .container-img{
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        overflow: hidden;
+        border: 1px solid $secondary-color;
+        @include flex();
+      }
+
+      &:hover img{
+        @include transform($method: scale(1.1))
+      }
+    }
+  }
+  
+}
+// Sports
+#sport {
+  background: url(../assets/Home/sport.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .tittle h2 {
+    font-size: 6vw;
+    color: $secondary-color;
+  }
+}
+
+// group cards
+#group-card .container-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1.5fr;
+    place-content: center;
+    gap: 40px;
+  
+    .card {
+      overflow: hidden;
+      position: relative;
+      border: 1px solid  $secondary-color;
+  
+      .description-card {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #00000071;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1vh;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #ffffff;
+      }
+  
+      &:hover .description-card {
+        top: 0;
+      }
+    }
+ }

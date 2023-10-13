@@ -1,0 +1,41 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+//portada about
+
+#portada-about {
+    // background: $primary-color url(../assets/About/Portada.png);
+     @include background($url : '../assets/About/Portada.png' , $additionalValue : $primary-color); 
+}
+  
+// sport life
+
+#sport-life {
+    @include background($url : '../assets/About/fondo sportlife.jpg');
+    .container-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      img {
+        width: 80%;
+      }
+    }
+}
+
+// description
+#container-information .container-img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 100%;
+    background: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    img {
+      transform: scale(2);
+    }
+  }
+  

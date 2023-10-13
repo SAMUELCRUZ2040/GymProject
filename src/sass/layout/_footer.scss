@@ -1,0 +1,35 @@
+@import "../utils/variables";
+
+footer{
+    background: $primary-color;
+
+    .container-fluid{
+      background: $Tertiary-color;
+      padding: 7rem 0;
+
+      .container-card {
+        background: $card-color;
+        border-radius: 1rem;
+        padding: 2rem 1rem;
+
+        .container-img{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            overflow: hidden;
+            @include flex();
+        }
+        .container-description a{
+            color: $secondary-color !important;
+            text-decoration: underline;
+        }
+        &:hover{
+            box-shadow: 5px 15px 30px -10px #ffffff21;
+            transition: none;
+        }
+      }
+    }
+    .container{
+        padding: 5rem 0;
+    }
+}

@@ -1,0 +1,356 @@
+:root{
+    --primary-color : #000000;
+    --secondary-color : #ff265b; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+* {
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background: var(--primary-color);
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5, 
+span{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+a,
+ul,
+li {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 800;
+}
+h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+h5{
+    font-size: 16px;
+    font-weight: 400;
+}
+h6{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+button{
+    padding: 1vh 8vh;
+    font-size: 14px;
+    color: #fff;
+    background: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 0;
+}
+
+
+
+/* home */
+
+#portada {
+    background: var(--primary-color) radial-gradient(circle at 20% 50%, #ffffff16 0%, transparent 50%);
+}
+
+#portada .tittle h1 {
+    font-size: 6vw;
+    font-weight: 600;
+}
+
+#portada .tittle h1:first-child {
+    color: var(--secondary-color);
+}
+
+/* sport */
+
+#sport{
+    background: url(../assets/Home/sport.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#sport .tittle h2{
+    font-size: 6vw;
+    color: var(--secondary-color);
+}
+
+/* group-img */
+
+#group-card .container-cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1.5fr;
+    place-content: center;
+    gap: 40px;  
+}
+
+#group-card .container-cards .card {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--secondary-color);
+}
+
+#group-card .container-cards .card .description-card{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000071;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vh;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+#group-card .container-cards .card:hover .description-card{
+    top: 0;
+}
+
+/*  About */
+
+/* sport-life */
+#sport-life{
+    background: var(--primary-color) url(../assets/About/fondo\ sportlife.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#sport-life .container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sport-life .container-img img{
+    width: 80%;
+}
+
+#portada-about{
+    background: var(--primary-color)  url(../assets/About/Portada.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* conntainer-information */
+#container-information .container-img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 100%;
+    background: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container-information .container-img img{
+    transform: scale(2);
+}
+/* services */
+
+#front-page.services-front-page{
+    background: linear-gradient(#000000b1, #0000003c, #000000b1), url(../assets/fondo-mujer-grafiti.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.child-content-services .container-img{
+    padding: 10vh;
+}
+
+.child-content-services .container-img .img{
+    width: 60% !important;
+    border-radius: 5vh;
+    margin-left: 18vh;
+}
+
+/* news */
+
+#front-page.front-page-news{
+    background: linear-gradient(#000000b1, #0000003c, #000000b1), url(../assets/mujer-fondo-solido.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#second-content {
+    height: 40vh;
+}
+
+#second-content .img{
+    display: inline-block;
+    margin: 5vh;
+}
+
+/* contact */
+
+ .container-inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  linear-gradient(#000000db, #0000006e , #000000c8), url(../assets/fondo-mujer-contact.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* footer */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #group-card {
+        height: auto;
+        padding: 4vh 0;
+    }
+
+    #group-card .container-cards{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+    
+}
+@media screen and (min-width: 575.98px) and (max-width: 768px) {
+
+    #group-card .container-cards{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+    
+}
+@media screen and (max-width: 575.98px) {
+
+    section{
+        width: 100%;
+        min-height: 100vh !important;
+    }
+
+    #portada .paragraph,
+    #portada .tittle {
+        text-align: center;
+    }
+    #portada .col-lg-6{
+        align-items: center !important;
+    }
+    #sport .paragraph{
+        width: 100% !important;
+        text-align: center;
+    }
+    #group-card {
+        height: auto;
+        padding: 4vh 0;
+    }
+    #group-card .container-cards{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    #portada-about {
+        background: var(--primary-color);
+    }
+    #portada-about .description h1{
+        font-size: 20px !important;
+    }
+    #container-information {
+        height: auto !important;
+    }  
+}
+@media screen and (max-height: 515.4px){
+    #sport,
+    #portada,
+    #group-card
+    {
+        height: auto !important;
+    }
+    /* about */
+    #portada-about {
+        background-size: 50% !important;
+        background-position: center;
+    }
+    #container-information {
+        height: auto !important;
+    }  
+}

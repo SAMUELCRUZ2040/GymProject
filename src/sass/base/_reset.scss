@@ -1,0 +1,64 @@
+@import "../utils/variables";
+
+* {
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    padding: 0;
+    margin: 0;
+}
+  
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ /* scroll */
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #36363a;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background: $primary-color;
+    overflow: hidden;
+}
+
+body{
+    width: calc(100% - 70px);
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow-y: scroll;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+:is(h1,h2,h3,h4,h5,span,a,ul,li, p) {
+    color: $letter-color !important;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Titillium Web', sans-serif;
+}

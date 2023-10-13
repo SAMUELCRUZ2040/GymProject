@@ -1,0 +1,30 @@
+
+@mixin flex($gap: 0px,  $justify: center  , $align: center , $direction: row ) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin background($url: "", $repeat: no-repeat, $position: center, $size: cover, $gradient: null, $additionalValue: null) {
+    $background: url($url) $repeat $position;
+    
+    @if($additionalValue) {
+        $background: #{$additionalValue} #{$background};
+    }
+
+    @if($gradient) {
+        $background: #{$gradient}, #{$background};
+    }
+
+    background: $background;
+    background-size: $size;
+}
+
+@mixin transform ($method){
+    -webkit-transform: $method;
+    -moz-transform: $method;
+    -o-transform: $method;
+    transform: $method;
+}
